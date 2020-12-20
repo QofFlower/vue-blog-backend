@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.106.228.114:8848
+        namespace: b72be6d1-ec0a-4bca-a003-cc9b231e56c7
+      config:
+        server-addr: 39.106.228.114:8848
+        namespace: aed0470c-fcc9-43a0-bdf3-536045bbd9a4
+        extension-configs:
+          - data-id: gateway-route.yaml
+            group: DEFAULT_GROUP
+            refresh: true

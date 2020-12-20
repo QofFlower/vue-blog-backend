@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  blog:
+    build: ./blog-server
+    ports:
+      - "8100:8100"
+
+  gateway:
+    build: ./gateway-server
+    ports:
+      - "8130:8130"
+
+  oauth2:
+    build: ./oauth2-server
+    ports:
+      - "8120:8120"
